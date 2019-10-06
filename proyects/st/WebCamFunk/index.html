@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get User Media Code Along!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>STYLISH APP</h1>
+    <div class="photobooth">
+        <video class="player" onClick="takePhoto()"></video>
+        <!-- <canvas class="photo"></canvas> -->
+        <ul>
+            <li><a onClick="takePhoto()">VAN-GOGH</a></li>
+            <li><a href="news.asp">PICCASO</a></li>
+            <li><a href="contact.asp">DALI</a></li>
+            <li><a href="about.asp">WARHOL</a></li>
+        </ul>
+
+
+        <img class="style_pic" src="/img/01vangFACE.jpg" alt="" onClick="takePhoto()">
+        <img class="style_pic" src="/img/01vangFACE.jpg" alt="" onClick="takePhoto()">
+        <img class="style_pic" src="/img/01vangFACE.jpg" alt="" onClick="takePhoto()">
+        <img class="style_pic" src="/img/01vangFACE.jpg" alt="" onClick="takePhoto()">
+    </div>
+    <div class="strip"></div>
+    <div class="strip2"></div>
+
+
+    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
