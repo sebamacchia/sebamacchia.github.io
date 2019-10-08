@@ -7,6 +7,13 @@ const strip = document.querySelector(".strip");
 const snap = document.querySelector(".snap");
 const stylized = document.querySelector(".stylized")
 const contentImg = document.getElementById("contentImg");
+const st = document.getElementById("st");
+
+const model = new mi.ArbitraryStyleTransferNetwork();
+
+const styleImg = document.getElementById("st");
+// const stylizedCanvas = document.getElementById("stylized");
+
 
 
 function getVideo() {
@@ -42,13 +49,14 @@ video.addEventListener('click', function () {
   const dataURI = canvas.toDataURL("image/jpeg")
   contentImg.src = dataURI
   console.log(contentImg)
-  // -------------------------------------------------------------------
-  // Magenta stuff
-  const model = new mi.ArbitraryStyleTransferNetwork();
 
-  const styleImg = document.getElementById("st");
-  // const stylizedCanvas = document.getElementById("stylized");
+  magenta()
 
+})
+
+// -------------------------------------------------------------------
+// Magenta stuff
+function magenta() {
   function stylize() {
     model
       .stylize(contentImg, styleImg)
@@ -60,26 +68,28 @@ video.addEventListener('click', function () {
   }
 
   model.initialize().then(stylize);
-})
+}
 
-// -------------------------------------------------------------------
-// Magenta stuff
-// const model = new mi.ArbitraryStyleTransferNetwork();
-// // const contentImg = document.getElementById("content");
-// const styleImg = document.getElementById("st");
-// const stylizedCanvas = document.getElementById("stylized");
+function scheduleA(event) {
+  // alert(this.options[this.selectedIndex].text);
 
-// function stylize() {
-//   model
-//     .stylize(contentImg, styleImg)
-//     .then(imageData => {
-//       stylized
-//         .getContext("2d")
-//         .putImageData(imageData, 0, 0);
-//     });
-// }
-
-// model.initialize().then(stylize);
+  if ((this.options[this.selectedIndex].text) === 'ARTE BIZANTINO (1400)') {
+    st.src = "/cosas/styletransfer/img/05artebisantino.jpg";
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'IMPRESIONISMO') {
+    st.src = "/cosas/styletransfer/img/02impresionismo.jpg";
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'TONALISMO') {
+    st.src = "/cosas/styletransfer/img/03tonalism.jpg"
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'CUBISMO (1907-1914)') {
+    st.src = "/cosas/styletransfer/img/03cubismy.jpg"
+    magenta()
+  }
+}
 
 
 

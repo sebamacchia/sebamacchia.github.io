@@ -11,12 +11,21 @@
 
 <body>
     <div class=container>
-        <h1>PASTICHME</h1>
+        <h1>PRISMA DE LA SALADA</h1>
         <h2>Click to take a pic</h2>
         <video class="player"></video>
         <img id="contentImg" width="300" height="225">
-
-        <img id="st" src="/cosas/styletransfer/img/01vangFACE.jpg" alt="" width="100">
+        <select id="style-select" onchange="scheduleA.call(this, event)">
+            <option value selected>Elegi un estilo</option>
+            <option value="ARTE BIZANTINO">ARTE BIZANTINO (1400)</option>
+            <option value="IMPRESIONISMO">IMPRESIONISMO</option>
+            <option value="TONALISMO">TONALISMO</option>
+            <option value="IMPRESIONISMO">CUBISMO (1907-1914)</option>
+            <option value="TONALISMO">TONALISMO</option>
+            <option value="ARTE BISANTINO">ARTE BISANTINO (1400)</option>
+        </select>
+        <br>
+        <img id="st" src="/cosas/styletransfer/img/01vangFACE.jpg" alt="" width="300">
         <canvas class="stylized" width="300" height="225"></canvas>
         <canvas class="photo" width="300" height="225"></canvas>
 
