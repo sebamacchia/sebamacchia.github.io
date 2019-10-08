@@ -28,13 +28,13 @@ html {
 }
 
 .photo {
-    width: 0%;
-    float: left;
+    /* width: 0%; */
+    /* float: left; */
     visibility: hidden;
 }
 
 .player {
-    width: 50vh;
+    width: 300px;
     float: left;
 }
 

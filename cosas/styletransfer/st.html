@@ -5,21 +5,27 @@
     <meta charset="UTF-8">
     <title>Style Transfer with Javascript</title>
     <link rel="stylesheet" href="style.css">
+    <!-- magenta -->
+    <script src="https://cdn.jsdelivr.net/npm/@magenta/image@0.2.1/dist/magentaimage.min.js"></script>
 </head>
 
 <body>
     <div class=container>
         <h1>PASTICHME</h1>
         <h2>Click to take a pic</h2>
+        <video class="player"></video>
+        <img id="contentImg" width="300" height="225">
 
-        <video class="player" onClick="takePhoto()"></video>
-        <canvas class="photo"></canvas>
-        <ul>
+        <img id="st" src="/cosas/styletransfer/img/01vangFACE.jpg" alt="" width="100">
+        <canvas class="stylized" width="300" height="225"></canvas>
+        <canvas class="photo" width="300" height="225"></canvas>
+
+        <!-- <ul>
             <li><a onClick="takePhoto()">IMPRESIONISM</a></li>
             <li><a href="news.asp">PICCASO</a></li>
             <li><a href="contact.asp">DALI</a></li>
             <li><a href="about.asp">WARHOL</a></li>
-        </ul>
+        </ul> -->
         <div class="strip"></div>
         <div class="strip2"></div>
     </div>
