@@ -150,7 +150,8 @@ ul {
 }
 
 #protitel {
-    font-size: 3vh
+    font-size: 2.5vh;
+    color: #ff487a
 }
 
 
@@ -197,12 +198,14 @@ ul {
     margin-left: 10px;
     width: 150px; */
     max-width: 100vh;
-    margin: 0 0px 0px 250px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sidebar .sidebar-text {
     float: right;
-    margin: 0 250px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -297,7 +300,8 @@ ul {
 }
 
 .content ul {
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 0;
 }
 
