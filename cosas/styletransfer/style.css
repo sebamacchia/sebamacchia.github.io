@@ -21,12 +21,6 @@ html {
 }
 
 
-.photobooth:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
 .photo {
     /* width: 0%; */
     /* float: left; */
@@ -124,10 +118,30 @@ li a:hover {
     color: white;
 }
 
-.style_pic {
-    max-width: 24%;
-    height: auto;
-    /* display: auto; */
-    margin-left: auto;
-    margin-right: auto
+
+
+/*  
+@media only screen and (max-width: 1000px) {
+    .container {
+        background: pink;
+        width: auto;
+        margin: auto;
+
+    }
+
+    .player,
+
+    #st,
+    .stylized {
+        width: 90vw;
+        height: 30vh;
+
+        margin-left: 10px;
+
+    }
+
+    #contentImg {
+        width: 90vw
+    }
 }
+*/
