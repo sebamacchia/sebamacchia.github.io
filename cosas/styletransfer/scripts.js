@@ -73,7 +73,7 @@ function magenta() {
 function scheduleA(event) {
   // alert(this.options[this.selectedIndex].text);
 
-  if ((this.options[this.selectedIndex].text) === 'ARTE BIZANTINO (1400)') {
+  if ((this.options[this.selectedIndex].text) === 'ARTE BIZANTINO') {
     st.src = "/cosas/styletransfer/img/05artebisantino.jpg";
     magenta()
   }
@@ -85,10 +85,31 @@ function scheduleA(event) {
     st.src = "/cosas/styletransfer/img/03tonalism.jpg"
     magenta()
   }
-  if ((this.options[this.selectedIndex].text) === 'CUBISMO (1907-1914)') {
+  if ((this.options[this.selectedIndex].text) === 'CUBISMO') {
     st.src = "/cosas/styletransfer/img/03cubismy.jpg"
     magenta()
   }
+  if ((this.options[this.selectedIndex].text) === 'POP-ART') {
+    st.src = "/cosas/styletransfer/img/popa.jpg"
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'ART-DECO') {
+    st.src = "/cosas/styletransfer/img/artdeco.jpg"
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'BAUHAUS') {
+    st.src = "/cosas/styletransfer/img/bauhaus.jpg"
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'MAGIC-REALISM') {
+    st.src = "/cosas/styletransfer/img/magicrealism.jpg"
+    magenta()
+  }
+  if ((this.options[this.selectedIndex].text) === 'PIXEL-ART') {
+    st.src = "/cosas/styletransfer/img/pixelart.jpg"
+    magenta()
+  }
+
 }
 
 
