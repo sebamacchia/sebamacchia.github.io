@@ -1,236 +1,60 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-
+<!doctype html>
+<html>
 
 <head>
+    <title>Seba Macc</title> <!-- META -->
     <meta charset="utf-8">
-    <title>
-        Sebastian Macchia
-    </title>
-
-    <meta name="author" content="Sebastian Macchia">
-    <meta name="description" content="Sebastian Macchia Webpage">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <link rel="stylesheet" href="style.css" media="screen" />
-    <link rel="stylesheet" href="css/base.css" type="text/css" media="screen, projection">
-    <link rel="stylesheet" href="css/mobile.css" type="text/css" media="screen, projection">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <!-- PWAs shity shitment 🙅‍♂️ -->
-    <link rel="manifest" href="/manifest.json">
-
-    <!-- See https://goo.gl/OOhYW5 -->
-    <link rel="manifest" href="manifest.json">
-
-    <!-- See https://goo.gl/qRE0vM -->
-    <meta name="theme-color" content="#7BE4D5">
-
-    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="Seba's Web">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="Seba's Web">
-
-    <!-- Homescreen icons -->
-    <link rel="apple-touch-icon" sizes="192x192" href="images/icon-192x192.png">
-
-    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/manifest/icon-192x192.png">
-    <meta name="msapplication-TileColor" content="#7BE4D5">
-    <meta name="msapplication-tap-highlight" content="no">
-
-    <!-- Default twitter cards -->
-    <meta name="twitter:card" content="Sebastian Macchia's blog">
-    <meta name="twitter:site" content="@sebamacc">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="my-app">
-    <meta property="og:image" content="images/icon-192x192.png">
-
-    <!-- Google Analytics -->
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-47334320-2']);
-        _gaq.push(['_setDomainName', 'meowni.ca']);
-        _gaq.push(['_trackPageview']);
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
-                '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
+    <link rel="alternate" type="application/rss+xml" title="Seba Macc" href="/feed.xml <link rel=" icon"="">
+    <link rel="mask-icon" href="fonts/safari-tab-icon.svg" color="#000000">
+    <meta name="description" content="An open source blog for inspiring and creative online work!">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
-<!--  
-                      _
-                    _| |_
-                  /~     ~\           /)
-                /'         `\      ,/':|
-               (             )    (  :/
-               |  (o ) (o )  |    /\:/'
-               |             |  /'//
-               |   \_   _/   |/'//'
- _______       |     ~~~    /'//'
-|*   + +|      |       /~\/'//'
-+-------+      |,-----'.////'|
-|#######|     /'    .///''  \|
-|#######|    (   .///###     )
-|#######|    `\///''##  ,---'|
-|#######|\     |\      /     |
-`~~~~~~~' `~---|-`\__/'      |
-que mira     (~\_           _/~)
-gato!         `\_ ~~-------~~ _/'
-                ~~---------~~
-
-------------------------------------------------
-
--->
-
 <body>
-    <emoji-rain id="rainmaker"></emoji-rain>
-    <div class="container">
-        <header class="sidebar">
-            <a href="/" title="Photo of my face" aria-label="Photo of my face">
-                <img src="/images/profile2.jpg" height="120" width="120" class="avatar">
-            </a>
+    <div class="content-wrapper">
+        <div class="tile-grid"> <noscript>
+                <style>
+                    header {
+                        display: none;
+                    }
 
-            <div class="sidebar-text">
-                <section class="meta">
-                    <a href="https://github.com/sebamacchia" target="_blank" title="GitHub" aria-label="GitHub">
-                        <svg viewbox="0 0 18 18" style="display: inline-block; width: 16px; height: 16px;">
-                            <g>
-                                <path
-                                    d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8" />
-                            </g>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/sebamacchia" target="_blank" title="Follow me on twitter"
-                        aria-label="Follow me on Twitter">
-                        <svg viewbox="0 0 18 18" style="display: inline-block; width: 16px; height: 16px;">
-                            <g>
-                                <path
-                                    d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.375-1.337.648-2.085.795-.598-.638-1.45-1.036-2.396-1.036-1.812 0-3.282 1.468-3.282 3.28 0 .258.03.51.085.75C5.152 5.39 2.733 4.084 1.114 2.1.83 2.583.67 3.147.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.416-.02-.617-.058.418 1.304 1.63 2.253 3.067 2.28-1.124.88-2.54 1.404-4.077 1.404-.265 0-.526-.015-.783-.045 1.453.93 3.178 1.474 5.032 1.474 6.038 0 9.34-5 9.34-9.338 0-.143-.004-.284-.01-.425.64-.463 1.198-1.04 1.638-1.7z"
-                                    fill-rule="nonzero" />
-                            </g>
-                        </svg>
-                    </a>
-                    <a href="https://medium.com/" target="_blank" title="Follow me on dribbble"
-                        aria-label="Follow me on dribbble" class="og">📝</a>
-                    <a href="https://sebita.bandcamp.com/" target="_blank" title="Follow my Sounds"
-                        aria-label="Follow my Sounds" class="og">🔉</a>
-                    <a href="/email" title="Atom RSS feed" aria-label="emailme" class="og">✉️</a>
-                </section>
-
-                <nav class="sections">
+                </style>
+                <div class="tile noscript">
+                    <h1>Seba Macc</h1>
+                    <h2>It looks like you don't have JavaScript enabled.</h2>
                     <ul>
-                        <!-- <li><a href="/cosas/who.html">who?</a></li> -->
-                        <li><a href="/">💻</a></li>
-                        <!--             <li><a href="/projects">how?</a></li> -->
-                        <li><a href="/">🥁</a></li>
-
+                        <li>Nearly everything on this site requires it.</li>
+                        <li>So you should turn JavaScript on if you want to see anymore content.</li>
                     </ul>
-                </nav>
-            </div>
-        </header>
-        <!-- ----------------------------------------------------------------------------------- -->
-        <section class="content">
-            <ul class="listing">
+                </div>
+            </noscript> </div>
+        <script>
+            //splitHERE var postJSON = [ { "type": "Inspiration", "title": "Really From", "content": `<p><em>A showcase of generative art pieces paired with stories of personal history and origin.</em></p> <p><a href="https://reallyfrom.com">Really From</a> - by <a href="https://catangui.com">Sean Catangui</a></p> `, "link": "https://reallyfrom.com", "remoteAsset": "", "image": "really-from.png", "imgWidth": "576", "imgHeight": "660", "siteDown": "" } , { "type": "Generative", "title": "Medieval city generator", "content": `<p><em>Play around with this cool generative city generator.</em></p> <p><a href="https://watabou.itch.io/medieval-fantasy-city-generator">Medieval city generator</a> - by <a href="https://watabou.itch.io/">Oleg Dolya</a></p> `, "link": "https://watabou.itch.io/medieval-fantasy-city-generator", "remoteAsset": "", "image": "medieval-city-generator.png", "imgWidth": "490", "imgHeight": "466", "siteDown": "" } , { "type": "Inspiration", "title": "Dancemusic wtf", "content": `<p><em>Hear the music, and name the genre.</em></p> <p><a href="http://dancemusic.wtf/">Dancemusic wtf</a> - by <a href="http://mattias.lol/">Mattias Hemmingsson</a></p> `, "link": "http://dancemusic.wtf/", "remoteAsset": "", "image": "dancemusic-wtf.png", "imgWidth": "1330", "imgHeight": "888", "siteDown": "" } , { "type": "Beautiful", "title": "Bellwoods", "content": `<p><em>A minimalistic, relaxing generative experience in your browser.</em></p> <p><a href="https://bellwoods.xyz/">Bellwoods</a> - by <a href="https://www.instagram.com/mattdesl_art/">Matt DesLauriers</a></p> `, "link": "https://bellwoods.xyz/", "remoteAsset": "", "image": "bellwoods.png", "imgWidth": "440", "imgHeight": "286", "siteDown": "" } , { "type": "Inspiration", "title": "Little Big City", "content": `<p><em>A neat little globe from anywhere in the world.</em></p> <p><a href="https://pissang.github.io/little-big-city/">Little Big City</a> - by <a href="https://github.com/pissang">Yi Shen</a></p> `, "link": "https://pissang.github.io/little-big-city/", "remoteAsset": "", "image": "little-big-city.png", "imgWidth": "414", "imgHeight": "382", "siteDown": "" } , { "type": "WideWeirdWeb", "title": "Enhance Computer", "content": `<p><em>Be the crime stopping mastermind you always wanted to be.</em></p> <p><a href="https://www.enhance.computer/">Enhance Computer</a> - by <a href="http://nicole.pizza/">Nicole He</a></p> `, "link": "https://www.enhance.computer/", "remoteAsset": "", "image": "enhance-computer.png", "imgWidth": "654", "imgHeight": "162", "siteDown": "" } , { "type": "Inspiration", "title": "Google Maps's Moat", "content": `<p><em>How far ahead of Apple Maps is Google Maps?</em></p> <p><a href="https://www.justinobeirne.com/google-maps-moat">Google Maps’s Moat</a> - by <a href="https://www.justinobeirne.com">Justin O’Beirne</a></p> `, "link": "https://www.justinobeirne.com/google-maps-moat", "remoteAsset": "", "image": "google-mapss-moat.gif", "imgWidth": "305", "imgHeight": "551", "siteDown": "" } , { "type": "Inspiration", "title": "Four Globes", "content": `<p><em>A beautiful Andy Warhol esque web experiment.</em></p> <p><a href="http://raluca-nicola.net/four-globes/">Four Globes</a> - by <a href="http://raluca-nicola.net/">Raluca</a></p> `, "link": "http://raluca-nicola.net/four-globes/", "remoteAsset": "", "image": "four-globes.png", "imgWidth": "600", "imgHeight": "600", "siteDown": "" } , { "type": "Beautiful", "title": "Lorem Ipsum", "content": `<p><em>A really nicely designed lorem ipsum template.</em></p> <p><a href="https://loremipsum.io/">Lorem Ipsum</a> - by <a href="https://wasai.co/">Wasai</a></p> `, "link": "https://loremipsum.io/", "remoteAsset": "", "image": "lorem-ipsum.png", "imgWidth": "704", "imgHeight": "326", "siteDown": "" } , { "type": "Beautiful", "title": "P5aholic web experiments", "content": `<p><em>Incredible web experiments with canvas and P5.js</em></p> <p><a href="http://p5aholic.me/series-of-web-design-experiments/day1/">P5aholic web experiments</a> - by <a href="http://p5aholic.me/">P5aholic</a></p> `, "link": "http://p5aholic.me/series-of-web-design-experiments/day1/", "remoteAsset": "", "image": "p5aholic-web-experiments.png", "imgWidth": "1006", "imgHeight": "604", "siteDown": "" } , { "type": "Resource", "title": "The doodle library", "content": `<p><em>An expanding collection of reusable simple drawings and doodles in a vector (SVG) format.</em></p> <p><a href="https://www.thedoodlelibrary.com/">The doodle library</a> - by <a href="http://www.ben-hur.info/">Adi Ben Hur</a></p> `, "link": "https://www.thedoodlelibrary.com/", "remoteAsset": "", "image": "the-doodle-library.png", "imgWidth": "412", "imgHeight": "444", "siteDown": "" } , { "type": "Musical", "title": "Tenori-Off", "content": `<p><em>A musical sequencer, with some machine learning love.</em></p> <p><a href="https://tenori-off.glitch.me/">Tenori-Off</a> - by <a href="https://meowni.ca/">Monica Dinculescu</a></p> `, "link": "https://tenori-off.glitch.me/", "remoteAsset": "", "image": "tenori-off.png", "imgWidth": "488", "imgHeight": "486", "siteDown": "" } , { "type": "Inspiration", "title": "Rabbit Ear", "content": `<p><em>A JS library for designing origami.</em></p> <p><a href="https://rabbitear.org/">Rabbit Ear</a></p> `, "link": "https://rabbitear.org/", "remoteAsset": "", "image": "rabbit-ear.png", "imgWidth": "435", "imgHeight": "435", "siteDown": "" } , { "type": "Inspiration", "title": "The Mutable Gallery", "content": `<p><em>A great collection of generative artworks.</em></p> <p><a href="https://mutable.gallery/">The Mutable Gallery</a> - by <a href="http://www.heydonworks.com/">Heydon Pickering</a></p> `, "link": "https://mutable.gallery/", "remoteAsset": "", "image": "the-mutable-gallery.png", "imgWidth": "1060", "imgHeight": "718", "siteDown": "" } , { "type": "Beautiful", "title": "Generative World Cup", "content": `<p><em>Generative world cup posters.</em></p> <p><a href="http://zehfernandes.com/generativeworldcup2018/">Generative World Cup</a> - by <a href="http://zehfernandes.com/">Zeh Fernandes</a></p> `, "link": "http://zehfernandes.com/generativeworldcup2018/", "remoteAsset": "", "image": "generative-world-cup.png", "imgWidth": "1236", "imgHeight": "600", "siteDown": "" } , { "type": "Coding", "title": "Elevation Lines", "content": `<p><em>Elevations of the world.</em></p> <p><a href="http://dnomadb.github.io/">Elevation Lines</a> - by <a href="https://www.mapbox.com/">Damon Burgett</a></p> `, "link": "http://dnomadb.github.io/", "remoteAsset": "", "image": "elevation-lines.png", "imgWidth": "565", "imgHeight": "516", "siteDown": "" } , { "type": "Beautiful", "title": "Oat the Goat", "content": `<p><em>An incredible WebGL story telling experience.</em></p> <p><a href="http://oatthegoat.co.nz/">Oat the Goat</a> - by <a href="https://www.bullyingfree.nz/">Bully Free NZ</a></p> `, "link": "http://oatthegoat.co.nz/", "remoteAsset": "", "image": "oat-the-goat.png", "imgWidth": "363", "imgHeight": "324", "siteDown": "" } , { "type": "Beautiful", "title": "Timeline of Earth", "content": `<p><em>Scroll through the timeline of earth!</em></p> <p><a href="http://timelineofearth.com/">Timeline of Earth</a> - by <a href="http://dubly.com/">Andy Bergmann</a></p> `, "link": "http://timelineofearth.com/", "remoteAsset": "", "image": "timeline-of-earth.png", "imgWidth": "338", "imgHeight": "326", "siteDown": "" } , { "type": "Resource", "title": "Drawing Zone", "content": `<p><em>Neat canvas drawing tool.</em></p> <p><a href="http://drawing.zone/">Drawing Zone</a> - by <a href="http://shillingburg.co/">Michael Shillingburg</a></p> `, "link": "http://drawing.zone/", "remoteAsset": "", "image": "drawing-zone.png", "imgWidth": "344", "imgHeight": "296", "siteDown": "" } , { "type": "Beautiful", "title": "Lost Without You", "content": `<p><em>Reunite two friends before time runs out in this beautifully polished game.</em></p> <p><a href="https://jackrugile.com/lost-without-you/">Lost Without You</a> - by <a href="https://jackrugile.com/">Jack Rugile</a> and <a href="https://twitter.com/Cambri44">Nicolle Witte</a></p> `, "link": "https://jackrugile.com/lost-without-you/", "remoteAsset": "", "image": "lost-without-you.png", "imgWidth": "682", "imgHeight": "252", "siteDown": "" } , ] //splitHERE 
 
-                <h3 class="rainbow">Stuff</h3>
+        </script>
+        <div class="loader">
+            <div class="loader-bar"></div>
+        </div>
+    </div> <!-- JS -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-83557691-1', 'auto');
+        ga('send', 'pageview');
 
-                <li>
-                    <a href="/cosas/styletransfer/st.html" target="_blank">AI Style Transfer with Javascript</a>
-                </li>
-                <li>
-                    <a href="index.html">Making A.I. Music</a>
-                </li>
-
-                <li>
-                    <a href="https://glacial-springs-75215.herokuapp.com/" target="_blank">S4mpl3r - A webapp to make
-                        Music</a>
-                </li>
-
-                <!--         <h3 class="rainbow">2018</h3> -->
-
-                <li>
-                    <a href="/cosas/I-print-my-girl-on-a-dog/I-print-my-girl-on-a-dog.html">I print my girl on a dog</a>
-                </li>
-
-                <li>
-                    <a href="/cosas/acoustic-sampling/acoustic-sampling.html">Acoustic Sampling</a>
-                </li>
-
-                <li>
-                    <a href="/cosas/moebius_strip/moebius_strip_music_box.html">Moebius strip musicbox</a>
-                </li>
-
-                <li>
-                    <a href="/cosas/Portable_video_turntablism/portable_video_turntablism.html">Portable Video
-                        Turntablism</a>
-                </li>
-
-                <!-- <h3 class="rainbow">Posts</h3>
-                <li>
-                    <a href="/posts/tensorflow.js.html">Workimg with Tensorflow.js</a>
-                </li> -->
-            </ul>
-            <br><br>
-        </section>
-
-        <!-- FOOTER -->
-        <section class="content">
-            <div class="footer">
-                <section class="thanks">
-                    <span><a href="mailto:jsmacchia@hotmail.com class=" heart" aria-hidden="true"></a></span>
-                    <span><a href="mailto:jsmacchia@hotmail.com class=" heart" aria-hidden="true">👅</a></span>
-                </section>
-
-        </section>
-    </div>
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/inspiring-online.js"></script>
 </body>
-
-
-
-<script>
-    'use strict';
-
-    // Load the pygments stylesheet so that it's not render blocking.
-    var head = document.head;
-    var link = document.createElement('link');
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
-    link.href = '/css/pygments.css'
-    head.appendChild(link);
-
-    // if ('serviceWorker' in navigator) {
-    //   navigator.serviceWorker.register('/sw.js', {scope: '/'}).then(_ => {
-    //     console.log('service worker is cool 🐳', location.origin);
-    //   }).catch(e => {
-    //     console.error('service worker is not so cool 🔥', e);
-    //     throw e;
-    //   });
-    // }
-
-    var rainmaker = document.getElementById('rainmaker');
-    document.getElementById('rainButton').addEventListener('click', rain);
-
-    function rain(event) {
-        if (rainmaker.active) {
-            rainmaker.stop();
-            event.target.innerHTML = "✨";
-        } else {
-            rainmaker.start();
-            event.target.innerHTML = "☔︎";
-        }
-    }
-
-</script>
 
 </html>
