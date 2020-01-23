@@ -141,7 +141,7 @@ function renderFooterTile() {
   );
   element.innerHTML = `
     <footer>
-      Wow, you got to the end! Got something to share, you should <a href="https://github.com/tholman/inspiring-online#contributing">consider contributing!</a>
+      <a href="https://github.com/tholman/inspiring-online#contributing">----->✉️<-----</a>
     </footer>`;
   document.body.appendChild(element);
 }
