@@ -123,11 +123,11 @@ function renderInitialTile() {
     <h1>Seba Macc</h1>
     <h2>🐒🦍🥥🐷🐴🦁🥑🎱🥜🍪🍔</h2>
     <ul>
-      <li><a href="https://github.com/tholman/inspiring-online/graphs/contributors">💻</a></li>
-      <li><a href="https://github.com/tholman/inspiring-online#contributing">🎸</a></li>
-      <li><a href="https://twitter.com/NspiringOnline">🐦</a></li>
-      <li><a href="https://github.com/tholman/inspiring-online#inspiring-online">📓</a></li>
-      <li><a href="https://github.com/tholman/inspiring-online#inspiring-online">📷</a></li>
+      <li><a href="https://github.com/sebamacchia">💻</a></li>
+      <li><a href="https://sebamacc.bandcamp.com/">🎸</a></li>
+      <li><a href="https://twitter.com/sebamacch">🐦</a></li>
+      <li><a href="https://medium.com/@sebamacchia">📓</a></li>
+      <li><a href="https://www.instagram.com/afrolacio/">📷</a></li>
 
     </ul>`;
 
@@ -141,7 +141,7 @@ function renderFooterTile() {
   );
   element.innerHTML = `
     <footer>
-      <a href="https://github.com/tholman/inspiring-online#contributing">----->✉️<-----</a>
+      <a href="mailto: tosebamac@gmail.com">----->✉️<-----</a>
     </footer>`;
   document.body.appendChild(element);
 }
