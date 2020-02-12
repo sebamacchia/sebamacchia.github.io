@@ -175,9 +175,7 @@ function renderPost(postData) {
       var anchor = document.createElement(
         "a"
       );
-      anchor.href =
-        postData.link +
-        "?ref=inspiring-online";
+      anchor.href = postData.link + "";
       anchor.target = "_blank";
 
       var img = document.createElement(
@@ -215,9 +213,7 @@ function renderPost(postData) {
     var anchor2 = document.createElement(
       "a"
     );
-    anchor2.href =
-      postData.link +
-      "?ref=inspiring-online";
+    anchor2.href = postData.link + "";
     anchor2.target = "_blank";
     anchor2.className = "title-anchor";
 
