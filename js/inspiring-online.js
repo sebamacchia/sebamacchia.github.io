@@ -127,7 +127,7 @@ function renderInitialTile() {
       <li><a href="https://sebamacc.bandcamp.com/">🎸</a></li>
       <li><a href="https://twitter.com/sebamacch">🐦</a></li>
       <li><a href="https://medium.com/@sebamacchia">📓</a></li>
-      <li><a href="https://www.instagram.com/afrolacio/">📷</a></li>
+      <li><a href="https://www.instagram.com/sebatapes/">📷</a></li>
 
     </ul>`;
 
