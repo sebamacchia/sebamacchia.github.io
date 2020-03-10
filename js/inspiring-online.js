@@ -178,7 +178,8 @@ function renderPost(postData) {
         "a"
       );
       anchor.href = postData.link + "";
-      anchor.target = "_blank";
+      // anchor.target = "_blank";
+      anchor.target = "_self";
 
       var img = document.createElement(
         "img"
