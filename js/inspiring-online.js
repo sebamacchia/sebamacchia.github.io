@@ -120,7 +120,9 @@ function renderInitialTile() {
     "div"
   );
   element.innerHTML = `
-    <h1>Seba Macc</h1>
+  
+  <h1>Seba Macc</h1>
+ 
     <h2>🐒🦍🥥🐷🐴🦁🥑🎱🥜🍪🍔</h2>
     <ul>
       <li><a href="https://github.com/sebamacchia">💻</a></li>

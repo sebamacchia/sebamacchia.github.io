@@ -33,6 +33,26 @@ h2 {
     transition-property: all !important
 }
 
+.tile2 {
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 9px 9px black;
+    border: 3px solid #000;
+    margin-bottom: 30px;
+    transition-property: all !important
+}
+
+.tile3 {
+    max-width: 100px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 9px 9px black;
+    border: 3px solid #000;
+    margin-bottom: 30px;
+    transition-property: all !important
+}
+
 .tile.site-down {
     opacity: 0.2 !important;
     pointer-events: none;
@@ -50,6 +70,19 @@ header {
 .noscript {
     margin: auto;
     max-width: 500px
+}
+
+.noscript2 {
+    margin: auto;
+    max-width: 95%
+}
+
+.noscript3 {
+    margin: auto;
+    max-width: 100px;
+    padding: 10px;
+    text-align: auto;
+    display: inline-block
 }
 
 .title-tile {
