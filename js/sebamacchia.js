@@ -121,7 +121,7 @@ function renderInitialTile() {
   
   <h1>Seba Macc</h1>
  
-    <h2>(clickme⤵⤵⤵⤵⤵⤵⤵⤵⤵⤵)</h2>
+    <h2>(clickme --------------)</h2>
     <ul>
       <li><a href="https://github.com/sebamacchia">💻</a></li>
       <li><a href="https://sebamacc.bandcamp.com/">🎸</a></li>
@@ -215,7 +215,8 @@ function renderPost(postData) {
       "a"
     );
     anchor2.href = postData.link + "";
-    anchor2.target = "_blank";
+    // anchor2.target = "_blank";
+    anchor2.target = "_self";
     anchor2.className = "title-anchor";
 
     var title = document.createElement(
