@@ -23,13 +23,13 @@ function init() {
     $.ajax({
       url: "/",
       type: "GET",
-      success: function(data) {
+      success: function (data) {
         eval(data.split(splitString)[1]);
         renderPosts(postJSON);
         loader.className = "loader";
         loading = false;
         addPaginator();
-      }
+      },
     });
   } else {
     renderPosts(postJSON);
@@ -51,7 +51,7 @@ function addPaginator() {
   ) {
     paginate();
   }
-  window.onscroll = function(e) {
+  window.onscroll = function (e) {
     if (
       window.innerHeight +
         window.scrollY >=
@@ -74,17 +74,17 @@ function paginate() {
   $.ajax({
     url: "/" + page + "/",
     type: "GET",
-    success: function(data) {
+    success: function (data) {
       eval(data.split(splitString)[1]);
       renderPosts(postJSON);
       loader.className = "loader";
       loading = false;
     },
-    error: function() {
+    error: function () {
       // Hide loader... but also, you're at the end of the page.
       renderFooterTile();
       loader.className = "loader";
-    }
+    },
   });
 }
 
@@ -97,19 +97,19 @@ function createIsotopeContainer() {
     itemSelector: ".tile",
     masonry: {
       gutter: 30,
-      fitWidth: true
+      fitWidth: true,
     },
     sortBy: "original-order",
     hiddenStyle: {
       transform: "translate(9px, 9px)",
       opacity: 0,
-      "box-shadow": "0px 0px black"
+      "box-shadow": "0px 0px black",
     },
     visibleStyle: {
       transform: "translate(0px, 0px)",
       opacity: 1,
-      "box-shadow": "9px 9px black"
-    }
+      "box-shadow": "9px 9px black",
+    },
   });
 }
 
@@ -121,7 +121,7 @@ function renderInitialTile() {
   
   <h1>Seba Macc</h1>
  
-    <h2>🐒🦍🥥🐷🐴🦁🥑🎱🥜🍪🍔</h2>
+    <h2>(clickme⤵⤵⤵⤵⤵⤵⤵⤵⤵⤵)</h2>
     <ul>
       <li><a href="https://github.com/sebamacchia">💻</a></li>
       <li><a href="https://sebamacc.bandcamp.com/">🎸</a></li>
