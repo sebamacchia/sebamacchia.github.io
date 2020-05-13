@@ -21,7 +21,16 @@ h4 {
     font-size: large;
     font-weight: normal;
     font-style: normal;
-    font-size: 26px
+    font-size: 30px
+}
+
+h6 {
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px
 }
 
 h5 {
