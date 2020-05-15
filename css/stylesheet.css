@@ -173,6 +173,16 @@ img {
     margin-left: 10px;
 }
 
+@media only screen and (min-width: 800px) {
+    .medium-pic {
+        width: 50%;
+        height: auto;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+
 .loader {
     position: fixed;
     bottom: 0px;
