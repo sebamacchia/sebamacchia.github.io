@@ -2941,7 +2941,7 @@ li.u-label {
 
 @media (pointer:coarse) {
     #canvas {
-        background-image: url(../images/bg.png);
+        background-image: url(../images/bgeye.png);
         background-size: cover;
         background-position: center center;
         opacity: .3;
