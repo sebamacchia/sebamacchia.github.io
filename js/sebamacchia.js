@@ -4,8 +4,7 @@
  * -- And endless scroll
  */
 
-var localAssetSource =
-  "/assets/post-images/";
+var localAssetSource = "/assets/post-images/";
 var splitString = "splitHERE"; // a way to get jason data
 var imageWidthInTile = 214; // 250 - padding - borders
 var page = 1;
@@ -38,23 +37,17 @@ function init() {
 }
 
 function cacheDom() {
-  loader = document.querySelector(
-    ".loader"
-  );
+  loader = document.querySelector(".loader");
 }
 
 function addPaginator() {
   // TODO: Wouldn't hurt to debounce this
-  if (
-    window.innerHeight + window.scrollY >=
-    document.body.scrollHeight - 50
-  ) {
+  if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 50) {
     paginate();
   }
   window.onscroll = function (e) {
     if (
-      window.innerHeight +
-        window.scrollY >=
+      window.innerHeight + window.scrollY >=
       document.body.scrollHeight - 50
     ) {
       paginate();
@@ -89,9 +82,7 @@ function paginate() {
 }
 
 function createIsotopeContainer() {
-  var elem = document.querySelector(
-    ".tile-grid"
-  );
+  var elem = document.querySelector(".tile-grid");
   isotopeObject = new Isotope(elem, {
     // options
     itemSelector: ".tile",
@@ -114,14 +105,12 @@ function createIsotopeContainer() {
 }
 
 function renderInitialTile() {
-  var element = document.createElement(
-    "div"
-  );
+  var element = document.createElement("div");
   element.innerHTML = `
   
-  <h1>Seba Macc</h1>
+  <h1>Sebastian Macchia</h1>
  
-    <h2>(clickme --------------)</h2>
+    <h2>👋 Hi!, check out my stuff</h2>
     <ul>
       <li><a href="https://github.com/sebamacchia">💻</a></li>
       <li><a href="https://sebamacc.bandcamp.com/">🎸</a></li>
@@ -136,9 +125,7 @@ function renderInitialTile() {
 }
 
 function renderFooterTile() {
-  var element = document.createElement(
-    "footer"
-  );
+  var element = document.createElement("footer");
   element.innerHTML = `
     <footer>
       <a href="mailto: tosebamac@gmail.com">----->✉️<-----</a>
@@ -147,11 +134,7 @@ function renderFooterTile() {
 }
 
 function renderPosts(postsData) {
-  for (
-    var i = 0;
-    i < postsData.length;
-    i++
-  ) {
+  for (var i = 0; i < postsData.length; i++) {
     renderPost(postsData[i]);
   }
 }
@@ -162,45 +145,30 @@ function renderPost(postData) {
       .replace(/\s+/g, "-")
       .replace(/[^a-z0-9+][^\w.-]/gi, "")
       .toLowerCase() !=
-    window.location.pathname
-      .replace(/\//g, "")
-      .toLowerCase()
+    window.location.pathname.replace(/\//g, "").toLowerCase()
   ) {
-    var element = document.createElement(
-      "div"
-    );
+    var element = document.createElement("div");
     element.className = "tile";
 
     if (postData.image !== "") {
-      var anchor = document.createElement(
-        "a"
-      );
+      var anchor = document.createElement("a");
       anchor.href = postData.link + "";
       // anchor.target = "_blank";
       anchor.target = "_self";
 
-      var img = document.createElement(
-        "img"
-      );
+      var img = document.createElement("img");
 
       var src = "";
-      if (
-        postData.remoteAsset === "true"
-      ) {
+      if (postData.remoteAsset === "true") {
         src += remoteAssetSource;
       } else {
         src += localAssetSource;
       }
 
-      var width = parseInt(
-        postData.imgWidth
-      );
-      var height = parseInt(
-        postData.imgHeight
-      );
+      var width = parseInt(postData.imgWidth);
+      var height = parseInt(postData.imgHeight);
 
-      var ratio =
-        imageWidthInTile / width;
+      var ratio = imageWidthInTile / width;
       var newWidth = imageWidthInTile;
       var newHeight = height * ratio;
 
@@ -211,29 +179,22 @@ function renderPost(postData) {
       element.appendChild(anchor);
     }
 
-    var anchor2 = document.createElement(
-      "a"
-    );
+    var anchor2 = document.createElement("a");
     anchor2.href = postData.link + "";
     // anchor2.target = "_blank";
     anchor2.target = "_self";
     anchor2.className = "title-anchor";
 
-    var title = document.createElement(
-      "h1"
-    );
+    var title = document.createElement("h1");
     title.innerHTML = postData.title;
     if (postData.siteDown == "true") {
-      element.className =
-        "tile site-down";
+      element.className = "tile site-down";
     }
 
     anchor2.appendChild(title);
     element.appendChild(anchor2);
 
-    var content = document.createElement(
-      "div"
-    );
+    var content = document.createElement("div");
     content.innerHTML = postData.content;
     element.appendChild(content);
 
