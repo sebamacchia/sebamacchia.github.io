@@ -1,174 +1,1377 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <title>Sebastian Macchia</title>
+    <meta name="description" content="Sebastian Macchia" />
+    <meta name="keywords" content="Sebastian Macchia" />
+    <meta name="author" content="Sebastian Macchia" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
 
-<head>
-    <title>Sebastian Macchia Webpage</title> <!-- META -->
-    <meta charset="utf-8">
-    <link rel="alternate" type="application/rss+xml" title="Sebastian Macchia" href="/feed.xml <link rel=" icon"="">
-    <link rel="mask-icon" href="fonts/safari-tab-icon.svg" color="#000000">
-    <meta name="description" content="An open source blog for inspiring and creative online work!">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- CSS -->
-    <link href="css/stylesheet2.css" rel="stylesheet" type="text/css">
-</head>
+    <!-- OG Tags -->
+    <meta property="og:title" content="Sebastian Macchia" />
+    <meta property="og:description" content="Have a seat.........." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="sebamacchia.github.io" />
 
-<body>
-
-    <div class="content-wrapper">
-        <div class="tile-grid"> <noscript>
-                <style>
-                    header {
-                        display: none;
-                    }
-
-                </style>
-                <div class="tile noscript">
-                    <h1>Sebastian Macchia</h1>
-                    <h2>It looks like you don't have JavaScript enabled.</h2>
-                    <ul>
-                        <li>Nearly everything on this site requires it.</li>
-                        <li>So you should turn JavaScript on if you want to see anymore content.</li>
-                    </ul>
-                </div>
-            </noscript> </div>
-        <script>
-            var postJSON = [{
-                    "type": "Artificial Intelligence",
-                    "title": "Experimenting with DeepFakes",
-                    "content": `<p><em></em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/deepfakes.html",
-                    "remoteAsset": "",
-                    "image": "deepfakes.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "Artificial Intelligence",
-                    "title": "Making an Album with Music Transformer",
-                    "content": `<p><em></em></p>`,
-                    "link": "/projects/nobodyssongs.html",
-                    "remoteAsset": "",
-                    "image": "nobody.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "Music",
-                    "title": " Experimenting with Neural Style Transfer",
-                    "content": `<p><em></em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/experimentingstyletransfer.html",
-                    "remoteAsset": "",
-                    "image": "styletransferexp.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "NLP",
-                    "title": "Cumbia Villera Lyrics Generator",
-                    "content": `<p><em></em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/cumbia-villera-generator.html",
-                    "remoteAsset": "",
-                    "image": "cumbia.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "Music",
-                    "title": "Style Transfer",
-                    "content": `<p><em>A tiny styletransfer Webapp made with tensorflow.js.</em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/styletransfer/st.html",
-                    "remoteAsset": "",
-                    "image": "styletransfer.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                }, {
-                    "type": "Music",
-                    "title": "Acoustic Sampling",
-                    "content": `<p><em>When you print a turntable and sample from it.</em></p>`,
-                    "link": "https://vimeo.com/278549078",
-                    "remoteAsset": "",
-                    "image": "aco.png",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "Music",
-                    "title": "S4mpl3r",
-                    "content": `<p><em>A Sampler webapp to play some viynl sample sounds.</em></p>`,
-                    "link": "https://glacial-springs-75215.herokuapp.com/",
-                    "remoteAsset": "",
-                    "image": "s4mpl3r.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "Music",
-                    "title": "Moebius Strip MusicBox",
-                    "content": `<p><em>M O E B I U S.</em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/moebius_strip_music_box.html",
-                    "remoteAsset": "",
-                    "image": "MoebiusStripMusicBox.png",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "3d-Print",
-                    "title": "Girl On a Dog",
-                    "content": `<p><em>When you print your girl on a dog.</em></p>`,
-                    "link": "https://sebamacchia.github.io/projects/girl-on-a-dog.html",
-                    "remoteAsset": "",
-                    "image": "girlOnDog.png",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-                {
-                    "type": "web",
-                    "title": "The Dancing Jesus Home Page",
-                    "content": `<p><em>Website that uses a gif of Jesus dancing. 
-                    Homer added this to his webpage to try and make money online like stupid Flanders. 
-                    The webpage then became the home of "Mr. X".</em></p>`,
-                    "link": "https://dancingjesus.glitch.me/",
-                    "remoteAsset": "",
-                    "image": "theancingJesus.jpg",
-                    "imgWidth": "954",
-                    "imgHeight": "529",
-                    "siteDown": ""
-                },
-
-
-            ]
-
-        </script>
-        <div class="loader">
-            <div class="loader-bar"></div>
-        </div>
-    </div> <!-- JS -->
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-83557691-1', 'auto');
-        ga('send', 'pageview');
-
-    </script>
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" value="summary_large_image" />
+    <meta name="twitter:site" value="@" />
+    <meta name="twitter:creator" value="@" />
+    <meta name="twitter:title" content="Sebastian Macchia" />
+    <meta name="twitter:description" value="Have a seat.........." />
+    <meta name="twitter:image" content="" />
+    <!---->
+    <link rel="shortcut icon" href="images/favicon.jpg" />
+    <link href="css/css.css" rel="stylesheet" />
     <script src="js/jquery.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script type="text/javascript" src="js/sebamacchia.js"></script>
-</body>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        font-family: "Lusitana", serif;
+        background: #fff;
+        color: #000;
+      }
+      a,
+      img {
+        border: none;
+      }
+      #container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+      }
+      #container.fixed {
+        min-height: inherit;
+        overflow: hidden;
+      }
+      h1 {
+        font-weight: normal;
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        transform: translate(0%, 50%) rotate(270deg);
+        -moz-transform: translate(0%, 50%) rotate(270deg);
+        -webkit-transform: translate(0%, 50%) rotate(270deg);
+        -ms-transform: translate(0%, 50%) rotate(270deg);
+        font-size: 15px;
+        text-transform: lowercase;
+        transform-origin: 0% 50%;
+        z-index: 101;
+      }
+      /*h2 { font-weight: normal; font-size: 15px; text-transform: lowercase; position: absolute; right: 0px; top: 93px; transform: rotate(90deg); -moz-transform: rotate(90deg); -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); z-index: 101; }*/
+      .links.desktop {
+        position: absolute;
+        right: 60px;
+        bottom: 60px;
+      }
+      .links.mobile {
+        display: none;
+      }
+      .links a {
+        text-align: center;
+        font-size: 15px;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+      }
+      .links a img {
+        width: 63px;
+        height: auto;
+      }
+      .links a + a {
+        margin-left: 9px;
+      }
+      .links a:hover {
+        color: #808080;
+      }
+      .works.mobile {
+        display: none;
+      }
+      #content {
+        width: 88%;
+        max-width: 2000px;
+        position: absolute;
+        top: 50%;
+        right: 48%;
+        transform: translate(50%, -50%);
+        -moz-transform: translate(50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%); /**/
+      }
+      /**/
+      #imagery {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        -moz-transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        width: 45%;
+        box-sizing: border-box;
+      }
+      #imagery video {
+        -webkit-box-shadow: 10px 6px 29px -9px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 6px 29px -9px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 6px 29px -9px rgba(0, 0, 0, 0.75);
+      }
+      #single-video,
+      #single-photo,
+      #three-photo,
+      #two-photo {
+        display: none;
+      }
+      #imagery.single-video #single-video {
+        display: block;
+      }
+      #imagery #single-video video {
+        width: 100%;
+        height: 100%;
+        max-height: 600px;
+        max-width: 650px;
+        display: block;
+        margin: auto;
+      }
+      #imagery #single-video video.portrait {
+        width: 347px;
+        display: block;
+        margin: auto;
+      }
+      /* SINGLE PHOTO */
+      #imagery.single-photo #single-photo {
+        display: block;
+      }
+      #single-photo img {
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+      }
+      #single-photo.portrait img {
+        max-width: 565px;
+      }
+      /* 3 PHOTO */
+      #imagery.three-photo #three-photo {
+        display: block;
+        width: 705px;
+        margin: auto;
+      }
+      #three-photo img {
+        width: 80%;
+        height: auto;
+        display: inline-block;
+      }
+      #three-photo img.portrait {
+        float: left;
+        width: 303px;
+        margin-top: 75px;
+      }
+      #three-photo img.small {
+        width: 335px;
+      }
+      #three-photo img.large {
+        width: 400px;
+      }
+      /* 2PHOTO + VIDEO */
+      #imagery.two-photo #two-photo {
+        display: block;
+        width: 655px;
+      }
+      #two-photo video {
+        float: right;
+        width: 250px;
+        height: 100%;
+        display: inline-block;
+        margin-top: 30px;
+      }
+      #two-photo div {
+        text-align: right;
+      }
+      #two-photo img {
+        display: inline-block;
+      }
+      #two-photo img.small {
+        width: 330px;
+      }
+      #two-photo img.large {
+        width: 380px;
+      }
+      /**/
+      #newsletter {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(0%, -50%);
+        -moz-transform: translate(0%, -50%);
+        -webkit-transform: translate(0%, -50%);
+        -ms-transform: translate(0%, -50%);
+        box-sizing: border-box;
+      }
+      #newsletter input,
+      #newsletter select {
+        border: none;
+        background-color: transparent;
+        box-sizing: border-box;
+        width: 365px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 5px auto;
+        color: #000;
+        height: 22px;
+        padding-top: 0px;
+        font-size: 15px;
+        text-transform: lowercase;
+        font-family: "Lusitana", serif;
+        display: block;
+      }
+      #newsletter select,
+      #newsletter option {
+      }
+      ::-webkit-input-placeholder {
+        color: #000 !important;
+      }
 
+      :-moz-placeholder {
+        color: #000 !important;
+        opacity: 1 !important;
+      }
+
+      ::-moz-placeholder {
+        color: #000 !important;
+        opacity: 1 !important;
+      }
+      :-ms-input-placeholder {
+        color: #000 !important;
+      }
+      ::placeholder {
+        color: #000 !important;
+        opacity: 1 !important;
+      }
+      #newsletter input[type="submit"] {
+        text-align: right;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 !important;
+      }
+      #newsletter input[type="submit"]:hover {
+        color: #808080 !important;
+      }
+      .legal {
+        text-align: right;
+        font-size: 13px;
+        max-width: 365px;
+        display: block;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      .legal a {
+        text-decoration: none;
+        color: #000;
+      }
+      .legal a:hover {
+        color: #808080;
+      }
+      .legal.mobile {
+        display: none;
+      }
+      #newsletter #thankyou,
+      #newsletter #submitting {
+        font-size: 28px;
+        text-align: center;
+        padding: 30px 0;
+        display: none;
+      }
+      /**/
+      #works,
+      .page {
+        position: absolute;
+        z-index: 100;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 500ms, height 0s 500ms;
+        background: #fff;
+        background-size: cover;
+        font-weight: 300;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+      #works.open,
+      .page.open {
+        opacity: 1;
+        height: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        transition: opacity 500ms, height 0s 0s;
+      }
+      .page .back {
+        position: absolute;
+        left: 0px;
+        top: -10px;
+        text-align: center;
+        color: #797dd2 !important;
+        text-decoration: none;
+        transition: background 200ms, color 300ms;
+        text-transform: lowercase;
+      }
+      .page .back:hover {
+        color: #565995 !important;
+      }
+      #works .popup,
+      .page .popup {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        -moz-transform: translate(50%, -50%);
+        -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        transition: top 500ms;
+        box-sizing: border-box;
+        width: 80%;
+        max-width: 1672px;
+        box-sizing: border-box;
+      }
+      /**/
+      #works h3 {
+        font-size: 14px;
+        font-weight: normal;
+        margin-bottom: 0;
+      }
+      #works h3::after {
+        content: "\A - \A";
+        white-space: pre;
+      }
+      #works a {
+        color: #797dd2;
+        text-decoration: none;
+      }
+      #works a::after {
+        content: "\A";
+        white-space: pre;
+      }
+      #works a:hover {
+        color: #565995;
+      }
+      #works div {
+        display: inline-block;
+        width: 32%;
+        box-sizing: border-box;
+        vertical-align: top;
+      }
+      #works div section {
+        display: none;
+      }
+      /**/
+      #music {
+        text-align: center;
+      }
+      #music p {
+        position: relative;
+        top: 50px;
+        line-height: 24px;
+      }
+      #music .cover {
+        width: 100%;
+        height: auto;
+        max-width: 490px;
+        -webkit-box-shadow: 13px 13px 22px -5px rgba(0, 0, 0, 0.42);
+        -moz-box-shadow: 13px 13px 22px -5px rgba(0, 0, 0, 0.42);
+        box-shadow: 13px 13px 22px -5px rgba(0, 0, 0, 0.42);
+        display: block; /*margin: 60px auto;*/
+        margin: -17px auto;
+      }
+      #music a {
+        color: #000;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 20px;
+      }
+      #music a:hover {
+        color: #797dd2;
+      }
+      #music .buy a + a {
+        margin-left: 50px;
+      }
+      /**/
+      /*NUEVO*/
+      #science,
+      #music2,
+      #resume {
+        text-align: center;
+      }
+      /* #music2 .video { text-align: center; display: block; margin: 30px auto; width: 100%; max-width: 560px; }
+#music2 .video iframe { margin-bottom: 30px; width: 100%; } */
+
+      #science .popup,
+      #resume .popup,
+      #music2 .popup,
+      #news .popup,
+      #tour .popup {
+        top: 30px;
+        transform: translate(50%, 0%);
+        -moz-transform: translate(50%, 0%);
+        -webkit-transform: translate(50%, 0%);
+        -ms-transform: translate(50%, 0%);
+        padding-bottom: 30px;
+      }
+
+      /*END NUEVO*/
+      #videos .video {
+        text-align: center;
+        display: block;
+        margin: 30px auto;
+        width: 100%;
+        max-width: 560px;
+      }
+
+      #videos .video iframe {
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      /**/
+      #sience .popup,
+      #videos .popup,
+      #news .popup,
+      #tour .popup {
+        top: 30px;
+        transform: translate(50%, 0%);
+        -moz-transform: translate(50%, 0%);
+        -webkit-transform: translate(50%, 0%);
+        -ms-transform: translate(50%, 0%);
+        padding-bottom: 30px;
+      }
+      #news .popup {
+        max-width: 900px;
+      }
+      #news .post {
+        text-align: center;
+        margin: 50px auto;
+      }
+      #news .post a {
+        color: #797dd2;
+        text-decoration: none;
+        overflow-wrap: break-word;
+      }
+      #news .post a:hover {
+        color: #565995;
+      }
+      #news .post .date {
+        font-size: 11px;
+      }
+      #science .post img {
+        width: 100%;
+        height: auto;
+        max-width: 420px;
+        margin: 10px auto;
+      }
+      #news .post img {
+        width: 100%;
+        height: auto;
+        max-width: 420px;
+        margin: 10px auto;
+      }
+      #news .post iframe {
+        margin: 10px auto;
+      }
+      #news .post video {
+        cursor: pointer;
+      }
+      /**/
+      #bit-events,
+      .bit-widget {
+        font-family: "Lusitana", serif !important;
+        margin: 30px auto !important;
+      }
+      #bit-events a {
+        text-decoration: none !important;
+      }
+      #bit-events a.bit-track-artist-header,
+      #bit-events .bit-header {
+        display: none !important;
+      }
+      #bit-events td.bit-rsvp,
+      .bit-nav-bar-container {
+        display: none !important;
+      }
+      .bit-location {
+        font-weight: bold;
+      }
+      .bit-widget .bit-button {
+        font-size: 13px !important;
+        font-weight: normal !important;
+        background-color: transparent !important;
+        color: #797dd2 !important;
+        text-transform: none !important;
+      }
+      .bit-widget .bit-event,
+      .bit-widget .bit-upcoming-events,
+      bit-past-events {
+        border: none !important;
+      }
+      #bit-events td.bit-date {
+        width: auto !important;
+      }
+      #bit-events td.bit-tickets {
+        width: auto !important;
+      }
+      #bit-events td.bit-tickets a {
+        color: #797dd2 !important;
+        text-decoration: none !important;
+        transition: 300ms;
+      }
+      #bit-events td.bit-tickets a:hover {
+        color: #565995 !important;
+      }
+
+      @media (max-width: 1400px) {
+        #three-photo {
+          width: 500px !important;
+        }
+        #three-photo img.portrait {
+          float: left;
+          width: 200px;
+          margin-top: 50px;
+        }
+        #three-photo img.small {
+          width: 250px;
+        }
+        #three-photo img.large {
+          width: 300px;
+        }
+        /**/
+        #imagery.two-photo #two-photo {
+          width: 500px;
+        }
+        #two-photo video {
+          width: 200px;
+        }
+        #two-photo img.small {
+          width: 250px;
+        }
+        #two-photo img.large {
+          width: 280px;
+        }
+        #science img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+
+      @media (max-width: 1152px) {
+        #container {
+          min-height: 895px;
+        }
+        #content {
+          right: 50%;
+        }
+        #newsletter {
+          position: static;
+          width: 365px;
+          margin: auto;
+          transform: translate(0%, 0%);
+          -moz-transform: translate(0%, 0%);
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+        }
+        #imagery {
+          position: static;
+          width: 100%;
+          transform: translate(0%, 0%);
+          -moz-transform: translate(0%, 0%);
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+          margin-top: 40px;
+        }
+        /**/
+        #two-photo {
+          margin: auto;
+        }
+        #works div {
+          width: 100%;
+          display: block;
+        }
+        .links.mobile {
+          display: block;
+          margin: 30px auto;
+          text-align: center;
+        }
+        .links.desktop {
+          display: none;
+        }
+        #science img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+
+      @media (max-width: 1152px), (max-height: 750px) {
+        #works .popup,
+        .page .popup {
+          top: 30px;
+          transform: translate(50%, 0%);
+          -moz-transform: translate(50%, 0%);
+          -webkit-transform: translate(50%, 0%);
+          -ms-transform: translate(50%, 0%);
+          padding-bottom: 30px;
+        }
+
+        #science img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        #content {
+          position: static;
+          transform: translate(0%, 0%);
+          -moz-transform: translate(0%, 0%);
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+          width: 100%;
+          padding-top: 50px;
+        }
+        #music .buy a {
+          display: block;
+          margin: 15px 0;
+          text-align: center;
+        }
+        #music .buy a + a {
+          margin-left: 0;
+        }
+        #tour .popup {
+          width: 95%;
+        }
+        #science img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+      /* NUEVO */
+      /* @media(max-width:768px) {
+#content { position: static; transform: translate(0%, 0%); -moz-transform: translate(0%, 0%); -webkit-transform: translate(0%, 0%); -ms-transform: translate(0%, 0%); width: 100%; padding-top: 50px; }
+#music2 .buy a { display: block; margin: 15px 0; text-align: center; }
+#music2 .buy a+a { margin-left: 0; }
+#tour .popup { width: 95%; }
+} */
+      /* END NUEVO */
+
+      @media (max-width: 960px) {
+        #news .post iframe,
+        #news .post video {
+          width: 90%;
+        }
+        #music2 .post iframe,
+        #news .post video {
+          width: 90%;
+        }
+        #science img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+
+      @media (max-width: 565px) {
+        #wrapper {
+          padding: 0 12px 30px 12px;
+        }
+        h1,
+        h2 {
+          transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          position: static;
+          padding-left: 8px;
+        }
+        h1 {
+          margin-bottom: 0;
+        }
+        h2 {
+          margin: 4px 0 15px 0;
+        }
+        .links {
+          text-align: center;
+          position: static;
+        }
+        .works {
+          position: static;
+          padding-left: 8px;
+        }
+        #content {
+          padding-top: 0;
+        }
+        #imagery {
+          margin-top: 20px;
+        }
+        /**/
+        #imagery.two-photo #two-photo {
+          width: 100%;
+        }
+        /**/
+        #three-photo {
+          width: 100% !important;
+        }
+        #three-photo img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        #music2 img {
+          width: 100% !important;
+          height: auto !important;
+        }
+        /**/
+        #newsletter {
+          width: 100%;
+        }
+        #newsletter input,
+        #newsletter select {
+          width: 100%;
+        }
+        #newsletter .legal {
+          display: none;
+        }
+        .legal.mobile {
+          display: block;
+          margin: 15px auto 0 auto;
+          text-align: center;
+        }
+      }
+
+      /* ACA COMIENZA UN STYILE PARTICULAR */
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Sebastian Macchia</h1>
+      <div id="content">
+        <div id="wrapper">
+          <section id="imagery">
+            <div id="single-video"></div>
+            <div id="single-photo"></div>
+            <div id="three-photo"></div>
+            <div id="two-photo"></div>
+          </section>
+
+          <!--NAV MOBILE-->
+          <nav class="links mobile">
+            <a href="#" onclick="toggleScience();"
+              ><img src="images/icon.jpg" /><br />
+              science</a
+            >
+
+            <a href="#" onclick="toggleTour();"
+              ><img src="images/icon.jpg" /><br />
+              live</a
+            >
+
+            <a href="#" onclick="toggleMusic();"
+              ><img src="images/icon.jpg" /><br />
+              music</a
+            >
+
+            <a href="#" onclick="toggleVideos();"
+              ><img src="images/icon.jpg" /><br />
+              videos</a
+            >
+
+            <a href="../4.0/micro-sites/guitar/index.html"
+              ><img src="images/icon.jpg" /><br />
+              guitarrist</a
+            >
+
+            <a href=""
+              ><img src="images/icon.jpg" /><br />
+              phonometrism</a
+            >
+          </nav>
+          <!--/ END NAV MOBILE-->
+        </div>
+      </div>
+      <!--NAV DESKTOP-->
+      <nav class="links desktop">
+        <a href="#" onclick="toggleScience();"
+          ><img src="images/icon.jpg" /><br />
+          science</a
+        >
+
+        <a href="#" onclick="toggleMusic();"
+          ><img src="images/icon.jpg" /><br />
+          a.i.</a
+        >
+
+        <a href="/4.0/micro-sites/resume/index.html"
+          ><img src="images/icon.jpg" /><br />
+          resume</a
+        >
+
+        <a href="#" onclick="toggleVideos();"
+          ><img src="images/icon.jpg" /><br />
+          films</a
+        >
+
+        <a href="../4.0/micro-sites/guitar/index.html"
+          ><img src="images/icon.jpg" /><br />
+          guitarrist</a
+        >
+
+        <a href=""
+          ><img src="images/icon.jpg" /><br />
+          phonometrism</a
+        >
+      </nav>
+      <!--/END NAV DESKTOP-->
+      <!-- ___________________________________________________________ -->
+
+      <!-- SCIENCE --------------------------------------------------------------------------->
+      <section id="science" class="page">
+        <div class="popup">
+          <a href="#" onclick="toggleScience();" class="back">back</a>
+          <div class="video">
+            <h1>A.I.</h1>
+            <h2>
+              <a href="">Experimenting with deep fakes</a>
+            </h2>
+            <a href="../4.0/micro-sites/deepfakes.html">
+              <img class="cover" src="../4.0/images/deepfakes.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------- -->
+
+      <!-- RESUME -->
+      <section id="resume" class="page">
+        <div class="popup">
+          <a href="#" onclick="toggleResume();" class="back">back</a>
+          <!-- PONER CODIGO HTML ACA PAPU -->
+          <div style="">
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <p>
+              peeeee <br />
+              peeeeee
+            </p>
+            <a href="" target="_blank"
+              ><img
+                src="images/asatt_vinyl2.jpg"
+                class="cover"
+                width="600"
+                height="600"
+                style="box-shadow: none;"
+            /></a>
+
+            <h2>h2</h2>
+            <h3>h3</h3>
+            <h4>h4</h4>
+            <p>
+              peeeee <br />
+              peeeeee
+            </p>
+            <a href="" target="_blank"
+              ><img
+                src="images/asatt_vinyl2.jpg"
+                class="cover"
+                width="600"
+                height="600"
+                style="box-shadow: none;"
+            /></a>
+
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="news" class="page">
+        <div class="popup">
+          <a href="#" onclick="toggleNews();" class="back">back</a>
+        </div>
+      </section>
+      <section id="videos" class="page">
+        <div class="popup">
+          <a href="#" onclick="toggleVideos();" class="back">back</a>
+          <div class="video">
+            <!-- <iframe width="560" height="315" src="S0qrinhNnOM.html" frameborder="0" allowfullscreen></iframe> -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/yrNX5ojzhvk?controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="caption">
+              Cranes in the Sky
+              <p>
+                Directed by Alan Ferguson and Solange Knowles<br />
+                Art and Creative Direction Solange Knowles and Carlota
+                Guerrero<br />
+                Director of Photography Arthur Jafa & Alan Ferguson<br />
+                Edited by Solange Knowles & Russell Santos<br />
+                Produced by Eli Cane
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="YTtrnDbOQAU.html"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="caption">
+              Don't Touch My Hair
+              <p>
+                Directed by Alan Ferguson and Solange Knowles<br />
+                Art and Creative Direction Solange Knowles and Carlota
+                Guerrero<br />
+                Director of Photography Arthur Jafa<br />
+                Edited by Solange Knowles & Cami Starkman<br />
+                Produced by Eli Cane
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="Hy9W_mrY_Vk.html"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="caption">
+              Losing You
+              <p>
+                Directed by Melina Matsoukas<br />
+                Art Direction by Solange Knowles
+              </p>
+            </div>
+          </div>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="Ed0BMSfEwuI.html"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <div class="caption">
+              Lovers in the Parking Lot
+              <p>Directed by Solange, Peter J. Brant and Emily Kai Bock</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="works">
+        <div class="popup">
+          <a href="#" onclick="toggleWorks();" class="back">back</a>
+          <div>
+            <h4>H4</h4>
+            <h2>H2</h2>
+            <h3>Albums</h3>
+            <a href="http://smarturl.it/ASATTstr" target="_blank"
+              >A Seat at the Table</a
+            >
+            <a
+              href="https://open.spotify.com/album/50kvbvxJnx4YeSiNvABNqB"
+              target="_blank"
+              >True EP</a
+            >
+            <a
+              href="https://open.spotify.com/album/6MsVbAqh2A9i7jYvPOsGNx"
+              target="_blank"
+              >Sol-Angel and the Hadley Street Dreams</a
+            >
+            <a
+              href="https://open.spotify.com/album/3hT1K1snb72RpoPkoiqyEb"
+              target="_blank"
+              >Solo Star</a
+            >
+            <h3>Music Videos</h3>
+            <a href="http://smarturl.it/CranesInTheSkyVideo" target="_blank"
+              >Cranes in The Sky</a
+            >
+            <a href="http://smarturl.it/DontTouchMyHairVideo" target="_blank">
+              Don't Touch My Hair</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=Hy9W_mrY_Vk"
+              target="_blank"
+              >Losing You</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=Ed0BMSfEwuI"
+              target="_blank"
+              >Lovers In The Parking lot</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=-8f895h6a-E"
+              target="_blank"
+              >I Decided</a
+            >
+            <h3>Musical Collaborations</h3>
+            <a
+              href="https://open.spotify.com/track/59HyFOI6q5foO41WToPXS9"
+              target="_blank"
+              >Kendrick Lamar</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=q29oVbfU624"
+              target="_blank"
+              >Devonte Hynes</a
+            ><a
+              href="https://open.spotify.com/track/55gX04VbFoW5wW7V3G0RAx"
+              target="_blank"
+              >Chromeo
+            </a>
+            <a
+              href="https://open.spotify.com/track/69vzkewKl2LPquyEiqD8BB"
+              target="_blank"
+              >Janelle Monae</a
+            >
+            <a
+              href="https://open.spotify.com/track/41axe4Ur2YeScYgPlsycIh"
+              target="_blank"
+              >Of Montreal</a
+            >
+            <h3>Songwriting/Producing Credits</h3>
+            <a href="#" onclick="$('#beyonce').show('slow');">Beyoncé</a>
+            <section id="beyonce">
+              <a
+                href="https://open.spotify.com/track/4qwT6ISA0clmfsFSTjd9Hb"
+                target="_blank"
+                >- Why Don't You Love Me</a
+              >
+              <a
+                href="https://open.spotify.com/track/6V1nOgkrGmr6Wx1x4RQ6Bc"
+                target="_blank"
+                >- Upgrade U</a
+              >
+              <a
+                href="https://open.spotify.com/track/6fmeXejj4CNkAQ78yao7oE"
+                target="_blank"
+                >- Get Me Bodied</a
+              >
+              <a
+                href="https://open.spotify.com/track/30Z84zKyyx3Hn2Af8OdwaR"
+                target="_blank"
+                >- Flaws and All</a
+              >
+              <a
+                href="https://open.spotify.com/track/7zt3bDTgxn03ZfV9xHqOs5"
+                target="_blank"
+                >- Resentment</a
+              >
+            </section>
+            <a
+              href="https://open.spotify.com/track/29I8fsiyVUSvpBjgXKkbHH"
+              target="_blank"
+              >Cassie
+            </a>
+            <a href="#" onclick="$('#destiny-child').show('slow');"
+              >Destiny's Child
+            </a>
+            <section id="destiny-child">
+              <a
+                href="https://open.spotify.com/track/2uqXLHlfFt4xZAFqE3SnI3"
+                target="_blank"
+                >-Bad Habit</a
+              >
+              <a
+                href="https://open.spotify.com/track/4mzTKwhvv1TLRjbtUd1eW4"
+                target="_blank"
+                >-Through With Love</a
+              >
+            </section>
+            <a href="#" onclick="$('#kelly-rowland').show('slow');"
+              >Kelly Rowland</a
+            >
+            <section id="kelly-rowland">
+              <a
+                href="https://open.spotify.com/track/6eVIMIckmF2tGnjC60LqSh"
+                target="_blank"
+                >- Simply Deep</a
+              >
+              <a
+                href="https://open.spotify.com/track/1jWPt2lChr1Dzi46dkk03h"
+                target="_blank"
+                >- Obsession</a
+              >
+              <a
+                href="https://open.spotify.com/track/5OOipuPcODdbpFFiCj9TP6"
+                target="_blank"
+                >- Beyond Imagination</a
+              >
+              <a
+                href="https://open.spotify.com/track/7LgRR7HCmSfthbEsnmYosH"
+                target="_blank"
+                >- Love</a
+              >
+            </section>
+            <a
+              href="https://open.spotify.com/track/55gX04VbFoW5wW7V3G0RAx"
+              target="_blank"
+              >Chromeo</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      var videos = ["1", "2", "3"];
+      var layout = Math.floor(Math.random() * 8 + 1);
+
+      switch (layout) {
+        // case 1: case 5: case 8:
+        //     //Single Video
+        //     $("#imagery").addClass("single-video");
+
+        //     var videoSelection = Math.floor((Math.random() * 8) + 1);
+
+        //     if(videoSelection =="1"){
+        //         $("#single-video").html("<video width='100%' height='930' ontimeupdate='if(this.currentTime >= 11.0) {this.currentTime = 0.0;}' autoplay loop><source src='asatt_assets/videos/1-1.mp4' type='video/mp4'><source src='asatt_assets/videos/1-1.ogv' type='video/ogg'>Your browser does not support the video tag. </video>");
+        //     }
+        //     else if(videoSelection =="2"){
+        //         $("#single-video video").addClass("portrait");
+        //         $("#single-video").html("<video width='100%' height='930' class='portrait' ontimeupdate='if(this.currentTime >= 8.0) {this.currentTime = 0.0;}' autoplay loop><source src='asatt_assets/videos/2-1.mp4' type='video/mp4'><source src='asatt_assets/videos/2-1.ogv' type='video/ogg'>Your browser does not support the video tag. </video>");
+        //     }
+        //     else if(videoSelection =="3" ){
+        //         $("#single-video").html("<video width='100%' height='930' ontimeupdate='if(this.currentTime >= 50.0) {this.currentTime = 0.0;}' autoplay loop><source src='asatt_assets/videos/3-1.mp4' type='video/mp4'><source src='asatt_assets/videos/1-1.ogv' type='video/ogg'>Your browser does not support the video tag. </video>");
+        //     }
+        // else if( videoSelection =="4" || videoSelection =="5"|| videoSelection =="6" || videoSelection =="7" || videoSelection =="8"  ){
+        //         $("#single-video").html("<video width='100%' height='930' ontimeupdate='if(this.currentTime >= 74.0) {this.currentTime = 0.0;}' autoplay loop><source src='asatt_assets/videos/4-1.mp4' type='video/mp4'><source src='asatt_assets/videos/4-1.ogv' type='video/ogg'>Your browser does not support the video tag. </video>");
+        //     }
+
+        // break;
+        // case 1: case 2: case 6:
+        // //Single Photo
+        // $("#imagery").addClass("single-photo");
+
+        // var photo = Math.floor((Math.random() * 17));
+        // if( photo >= 14 ){ $("#single-photo").addClass("portrait"); }
+        // $("#single-photo").html("<img src='asatt_assets/images/"+photo+".png' />");
+
+        // break;
+        // case 1: case 7:
+        // all
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+          //Three Photo
+          $("#imagery").addClass("three-photo");
+          var portraitPhoto = Math.floor(Math.random() * 3 + 28);
+          var landscapePhoto = Math.floor(Math.random() * 30);
+          $("#three-photo").html(
+            "<img class='portrait' src='asatt_assets/images/" +
+              portraitPhoto +
+              ".png'/> <img class='small' src='asatt_assets/images/" +
+              landscapePhoto +
+              ".png'/><img class='large' src='asatt_assets/images/" +
+              (landscapePhoto + 1) +
+              ".png'>"
+          );
+          break;
+        // case 4:
+        //     //Two Photo + One Video
+        //     $("#imagery").addClass("two-photo");
+
+        //     var landscapePhoto = Math.floor((Math.random() * 13));
+
+        //     $("#two-photo").html("<video width='100%' height='930' class='portrait' ontimeupdate='if(this.currentTime >= 8.0) {this.currentTime = 0.0;}' autoplay loop><source src='asatt_assets/videos/2-1.mp4' type='video/mp4'><source src='asatt_assets/videos/2-1.ogv' type='video/ogg'>Your browser does not support the video tag.</video><div><img src='asatt_assets/images/"+landscapePhoto+".png' class='small'/><img src='asatt_assets/images/"+(landscapePhoto+1)+".png' class='large'/></div>");
+        //     break;
+      }
+
+      function toggleScience() {
+        muteVideos();
+        $("#science").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+
+      function toggleResume() {
+        muteVideos();
+        $("#resume").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+
+      function toggleWorks() {
+        muteVideos();
+        $("#works").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+      function toggleMusic() {
+        muteVideos();
+        $("#music").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+      function toggleTour() {
+        muteVideos();
+        $("#music").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+      function toggleVideos() {
+        muteVideos();
+        $("#videos").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+      function toggleNews() {
+        muteVideos();
+        if (!newsWritten) {
+          $("#news .popup").append(newsBody);
+          $("#news .popup .post a").attr("target", "_blank");
+          $(document.body).on("click", "#news .popup .post video", function () {
+            this.muted = false;
+            this.controls = true;
+            if (typeof InstallTrigger == "undefined")
+              this.paused ? this.play() : this.pause();
+          });
+
+          newsWritten = true;
+        }
+        $("#news").toggleClass("open");
+        $("#container").toggleClass("fixed");
+      }
+
+      function muteVideos() {
+        $("video").each(function () {
+          if ($(this).prop("muted")) {
+            $(this).prop("muted", false);
+          } else {
+            $(this).prop("muted", true);
+          }
+        });
+      }
+
+      function loadAsyncScript(strSource) {
+        var elemScript = document.createElement("script");
+        elemScript.async = true;
+        elemScript.src = strSource;
+        document.body.appendChild(elemScript);
+      }
+
+      init();
+    </script>
+    <script>
+      jQuery(document).ready(function ($) {
+        // Newsletter
+
+        $("#Signup").on("submit", function (e) {
+          e.preventDefault();
+          var action = $(this).attr("action");
+          var form_data = $(this).serialize();
+          $("#submit")
+            .val("submitting...")
+            .prop("disabled", true)
+            .css("color", "#808080");
+
+          $.post(
+            action,
+            form_data,
+            function (response, statusText, xhr) {
+              switch (xhr.status) {
+                case 200:
+                  $("#newsletter form").hide();
+                  $("#thankyou").show();
+                  break;
+                case 400:
+                case 404:
+                  alert(response.error_message);
+                  $("#submit")
+                    .val("submit")
+                    .prop("disabled", false)
+                    .css("color", "#000000");
+                  break;
+                case 410:
+                  break;
+                case 403:
+                  break;
+              }
+            },
+            "json"
+          );
+        });
+      });
+    </script>
+    <!-- Google Code for Sebastian Macchia - Site - 540 Day Conversion Page -->
+    <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+    <script type="text/javascript">
+      /* <![CDATA[ */
+      var google_conversion_id = 996921893;
+      var google_conversion_label = "70wwCP6jwmoQpaSv2wM";
+      var google_custom_params = window.google_tag_params;
+      var google_remarketing_only = true;
+      /* ]]> */
+    </script>
+    <script type="text/javascript" src="js/conversion.js"></script>
+    <noscript>
+      <div style="display: inline;">
+        <img
+          height="1"
+          width="1"
+          style="border-style: none;"
+          alt=""
+          src="996921893"
+        />
+      </div>
+    </noscript>
+
+    <noscript>
+      <img height="1" width="1" style="display: none;" src="tr" />
+    </noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe
+        src="ns.html"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe>
+    </noscript>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WP7WV3");
+    </script>
+    <!-- End Google Tag Manager -->
+  </body>
 </html>
